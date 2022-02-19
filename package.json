@@ -1,0 +1,17 @@
+{
+  "name": "eve",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/oclif/hello-world.git",
+  "author": "Liam Joseph Silk <liamjosephsilk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^9.0.0",
+    "consola": "^2.15.3"
+  },
+  "bin": {
+    "eve": "./index.js"
+  },
+  "type": "module"
+}
