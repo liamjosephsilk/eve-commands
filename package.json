@@ -8,7 +8,9 @@
   "dependencies": {
     "chalk": "^5.0.0",
     "commander": "^9.0.0",
-    "consola": "^2.15.3"
+    "consola": "^2.15.3",
+    "figlet": "^1.5.2",
+    "nanospinner": "^1.0.0"
   },
   "bin": {
     "eve": "./index.js"

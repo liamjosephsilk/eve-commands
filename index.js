@@ -4,7 +4,7 @@ import { program } from "commander";
 import section from "./commands/section.js";
 
 program
-  .command("section <task>")
+  .command("section <section>")
   .description("Add a section template")
   .option(
     "-js, --javascript",
