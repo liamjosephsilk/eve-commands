@@ -1,6 +1,7 @@
 import { createSpinner } from "nanospinner";
 import createJS from "../packages/createJS.js";
 import createSection from "../packages/createSection.js";
+import { readFileSync } from "fs";
 import consola from "consola";
 import chalk from "chalk";
 import figlet from "figlet";

@@ -10,6 +10,7 @@
     "commander": "^9.0.0",
     "consola": "^2.15.3",
     "figlet": "^1.5.2",
+    "js-yaml": "^4.1.0",
     "nanospinner": "^1.0.0"
   },
   "bin": {
