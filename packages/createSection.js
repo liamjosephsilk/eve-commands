@@ -11,29 +11,26 @@ const __dirname = path.dirname(__filename);
 
 const createSection = async (templateName, flag = false) => {
   const fileType = flag ? sectionsJS(templateName) : sections(templateName);
+  let filePath = `${CURR_DIR}/sections/${templateName}.liquid`;
 
-  writeFile(
-    `${CURR_DIR}/sections/${templateName}.liquid`,
-    fileType,
-    function (err) {
-      if (err) {
-        consola.error(chalk.red.bold(err.message));
-        consola.info(
-          chalk.black.bgRedBright(
-            "Looks like you need to create an /sections directory"
-          )
-        );
+  writeFile(filePath, fileType, function (err) {
+    if (err) {
+      consola.error(chalk.red.bold(err.message));
+      consola.info(
+        chalk.black.bgRedBright(
+          "Looks like you need to create an /sections directory"
+        )
+      );
 
-        consola.info(
-          chalk.black.bgRedBright(
-            "Please check you are using Shopify 2.0 file structure"
-          )
-        );
+      consola.info(
+        chalk.black.bgRedBright(
+          "Please check you are using Shopify 2.0 file structure"
+        )
+      );
 
-        throw err;
-      }
+      throw err;
     }
-  );
+  });
 };
 
 export default createSection;
