@@ -10,8 +10,8 @@ const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 export default async function section(section, options) {
   if (options.javascript) {
-    const jsSpinner = createSpinner("Creatiing Javascript template").start();
-    const liquidSpinner = createSpinner("Creatiing Liquid template").start();
+    const jsSpinner = createSpinner("Creating Javascript template").start();
+    const liquidSpinner = createSpinner("Creating Liquid template").start();
 
     try {
       await createJS(section);
@@ -30,7 +30,7 @@ export default async function section(section, options) {
       );
     }
   } else {
-    const liquidSpinner = createSpinner("Creatiing Liquid template").start();
+    const liquidSpinner = createSpinner("Creating Liquid template").start();
 
     try {
       await createSection(section);
